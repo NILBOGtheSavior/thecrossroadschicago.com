@@ -1,0 +1,280 @@
+@media screen and (min-width: 0px) {
+    body {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        /* font-family: parchment;
+        font-size: 1.5em; */
+        /* nav bar */
+        nav {
+            z-index: 5;
+            position: sticky;
+            top: 0;
+            height: 0px;
+            div {
+                background-color: rgba(0, 0, 0, 0.75);
+                display: block;
+                color: white;
+                padding: 10px;
+                height: 80px;
+                img {
+                    display: block;
+                    filter: drop-shadow(0px 1px 5px black);
+                    margin: auto;
+                    max-width: 300px;
+                }
+                ul {
+                    text-shadow: 0px 1px 5px black;
+                    list-style-type: none;
+                    padding: 10px;
+                    display: flex;
+                    justify-content: space-around;
+                    width: 300px;
+                    margin: auto;
+                    a {
+                        color: white;
+                        text-decoration: none;
+                        li {
+                            width: 75px;
+                            text-align: center;
+                            border: solid 1px white;
+                            padding: 3px;
+                            border-radius: 5px;
+                            overflow: hidden;
+                        }
+                    }
+                }
+            }
+        }
+        /* header */
+        header {
+            background-image: url(../img/hero.png);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh;
+            div {
+                background-color: rgba(0, 0, 0, 0.75);
+                color: white;
+                height: 100%;
+                span {
+                    display: block;
+                    margin-inline: 10%;
+                    padding-block: 50%;
+                    h2 {
+                        text-align: center;
+                    }
+                    ul {
+                        padding: 20px 0;
+                        list-style-type: none;
+                        li {
+                            backdrop-filter: blur(15px);
+                            border: solid 1px white;
+                            border-radius: 5px;
+                            padding: 10px;
+                            margin-block: 1.5em;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+        main {
+            section#about {
+                background-image: url(../img/stadium.jpg);
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+                color: white;
+                p#intro {
+                    background-color: rgba(0, 0, 0, 0.75);
+                    padding: 50px 10%;
+                }
+                img {
+                    width: 100%;
+                }
+            }
+            section#hours {
+                padding: 25px 10%;
+            }
+            section#partyRequest {
+                display: flex;
+                flex-direction: column;
+                padding: 25px 10%;
+                div {
+                    width: 100%;
+                    display: flex;
+                    padding-block: 10px;
+                    label {
+                        padding-right: 10px;
+                    }
+                    input {
+                        flex: 1;
+                    }
+                    textarea {
+                        width: 95%;
+                        max-width: 500px;
+                        height: 100px;
+                    }
+                    button {
+                        flex: 1;
+                    }
+                }
+            }
+        }
+        footer {
+            display: flex;
+            color: white;
+            background-image: url(../img/hero.png);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            padding: 10px;
+            div {
+                a {
+                    color: white;
+                    text-decoration: none;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 500px)  {
+    body {
+        header {
+            div {
+
+                span {
+                    max-width: 500px;
+                    margin: auto;
+                    padding-block: 25%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1100px)  {
+    body {
+        nav {
+            div {
+                display: flex;
+                justify-content: space-between;
+                img {
+                    display: inline;
+                    margin: 0;
+                }
+                ul {
+                    margin: 0;
+                    align-items: center;
+                    font-size: 1.5em;
+                    width: 400px;
+                    a {
+                        li {
+                            border: none;
+                            border-bottom: solid 1px black;
+                            border-radius: 0;
+                            width: 100px;
+                            transition: border-bottom 500ms;
+                        }:hover {
+                            /* background-color: rgba(255, 255, 255, 0.5); */
+                            border-bottom: solid 1px white;
+                            /* background: linear-gradient(0deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 50%); */
+                        }
+                    }
+                }
+            }
+        }
+        header {
+            min-height: 700px;
+            div {
+                span {
+                    max-width: 750px;
+                    font-size: 1.5em;
+                    padding-block: 10%;
+                }
+                ul {
+                    li{
+                        transition: background-color 500ms;
+                    }:hover {
+                        background-color: rgba(255, 255, 255, 0.5);
+                    }
+                }
+            }
+        }
+        main {
+            font-size: 1.5em;
+            section#about {
+                p#intro {
+                    padding-inline: 20%;
+                }
+                div#banner {
+                    background-color: #080808;
+                    img {
+                        max-width: 1100px;
+                        display: block;
+                        margin: auto;
+                   }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    body {
+        nav {
+            div {
+                display: flex;
+                justify-content: space-between;
+                img {
+                    display: inline;
+                    margin: 0;
+                }
+                ul {
+                    margin: 0;
+                    align-items: center;
+                    font-size: 2em;
+                    width: 400px;
+                    a {
+                        li {
+                            border: none;
+                            border-bottom: solid 1px transparent;
+                            border-radius: 0;
+                            width: 100px;
+                            transition: border-bottom 500ms;
+                        }:hover {
+                            /* background-color: rgba(255, 255, 255, 0.5); */
+                            border-bottom: solid 1px white;
+                            /* background: linear-gradient(0deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 50%); */
+                        }
+                    }
+                }
+            }
+        }
+        header {
+            min-height: 700px;
+            div {
+                span {
+                    max-width: 1000px;
+                    font-size: 2em;
+                    padding-block: 7.5%;
+                }
+            }
+        }
+        main {
+            font-size: 2em;
+            section#about {
+                p#intro {
+                    padding-inline: 25%;
+                }
+            }
+        }
+    }
+}
+
+@font-face {
+    font-family: "parchment";
+    src:
+    url(fonts/Parchment\ MF.ttf)
+}
