@@ -54,20 +54,20 @@
                 <form action="">
                     <h2>Party Reservations</h2>
                     <div>
-                        <input type="text" placeholder="Name">
+                        <input type="text" placeholder="Name" required="true">
                     </div>
                     <div>
-                        <input type="email" placeholder="Email Address">
+                        <input type="email" placeholder="Email Address" required="true">
                     </div>
                     <div>
-                        <input type="tel" placeholder="Phone Number">
+                        <input type="tel" placeholder="Phone Number" required="true">
                     </div>
                     <div>
                         <label for="">Event Date</label>
-                        <input type="date">
+                        <input type="date" required="true">
                     </div>
                     <div>
-                        <input type="number" placeholder="Party Size" min="10" max="50">
+                        <input type="number" placeholder="Party Size" min="10" max="50" required="true">
                     </div>
                     <div>
                         <label for="">Other Information</label>
@@ -80,16 +80,18 @@
             </section>
         </main>
         <footer>
-            <div style="flex: 2;">
-                <img src="img/logo-inv.png" alt="" width="50px">
-                <p>&copy; 2024 All Rights Reserved</p>
-                <a href="tel:+1312-243-1113">+1 (312) 243-1113</a>
-                <p>1120 W. Madison <br> Chicago, IL. 60607</p>
-                
-            </div>
-            <div style="flex: 1; text-align: end;">
-                <small>Designed by <b><a href="https://naztechempire.com/">Naztech Empire</a></b> &copy; 2024 </small>
-            </div>
+            <span>
+                <div style="flex: 2;">
+                    <img src="img/logo-inv.png" alt="" width="50px">
+                    <p> <strong class="parchment">The Crossroads Bar and Grill</strong> &copy; <small>2024 All Rights Reserved</small></p>
+                    <a href="tel:+1312-243-1113">+1 (312) 243-1113</a>
+                    <p>1120 W. Madison <br> Chicago, IL. 60607</p>
+                    
+                </div>
+                <div style="flex: 1; text-align: end;">
+                    <small>Designed by <b><a href="https://naztechempire.com/">Naztech Empire</a></b> &copy; 2024 </small>
+                </div>
+            </span>
         </footer>
     </body>
 </html>

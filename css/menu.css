@@ -1,0 +1,72 @@
+@media screen and (min-width: 0px) {
+    body {
+        main {
+            margin-top: 100px;
+            ul#menuSelect {
+                padding: 10px;
+                list-style-type: none;
+                display: flex;
+                gap: 10px;
+                li {
+                    padding: 10px;
+                    border: solid 1px black;
+                    border-radius: 5px;
+                    width: 100px;
+                    text-align: center;
+                }:hover {
+                    background-color: rgba(0, 0, 0, 0.25);
+                }
+                li.selected {
+                    background-color: rgba(0, 0, 0, 0.25);
+                    font-weight: bold;
+                }
+            }
+            section {
+                h2 {
+                    padding: 5px;
+                    font-family: parchment;
+                    font-size: 3em;
+                }
+                h4 {
+                    padding: 5px;
+                    font-weight: normal;
+                }
+                span {
+                    display: flex;
+                    padding: 5px;
+                    div {
+                        img {
+                            width: 100px;
+                            padding: 5px;
+                        }
+                        h3 {
+                            font-size: 1em;
+                        }
+                        p {
+                            font-size: 0.75em;
+                        }
+                        a {
+                            font-size: 0.75em;
+                        }
+                    }
+                }
+                span:nth-child(even) {
+                    background-color: rgba(0, 0, 0, 0.1);
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 500px)  {
+    body {
+
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    body {
+
+    }
+}

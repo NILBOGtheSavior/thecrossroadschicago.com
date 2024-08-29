@@ -39,6 +39,9 @@
                             padding: 3px;
                             border-radius: 5px;
                             overflow: hidden;
+                            transition: background-color 500ms;
+                        } :hover {
+                            background-color: rgba(255, 255, 255, 0.5);
                         }
                     }
                 }
@@ -66,12 +69,15 @@
                         padding: 20px 0;
                         list-style-type: none;
                         li {
+                            transition: background-color 500ms;
                             backdrop-filter: blur(15px);
                             border: solid 1px white;
                             border-radius: 5px;
                             padding: 10px;
                             margin-block: 1.5em;
                             text-align: center;
+                        } :hover {
+                            background-color: rgba(255, 255, 255, 0.5);
                         }
                     }
                 }
@@ -96,43 +102,72 @@
                 padding: 25px 10%;
             }
             section#partyRequest {
-                display: flex;
-                flex-direction: column;
                 padding: 25px 10%;
-                div {
-                    width: 100%;
+                form {
                     display: flex;
-                    padding-block: 10px;
-                    label {
-                        padding-right: 10px;
-                    }
-                    input {
-                        flex: 1;
-                    }
-                    textarea {
-                        width: 95%;
-                        max-width: 500px;
-                        height: 100px;
-                    }
-                    button {
-                        flex: 1;
+                    flex-direction: column;
+                    max-width: 500px;
+                    div {
+                        width: 100%;
+                        display: flex;
+                        padding-block: 10px;
+                        label {
+                            padding-right: 10px;
+                            font-size: 1.25em;
+                            padding: 5px 10px;
+                        }
+                        input {
+                            flex: 1;
+                            font-size: 1em;
+                            border: solid 1px grey;
+                            border-radius: 5px;
+                            padding: 5px 10px;
+                            font-family: Arial, Helvetica, sans-serif;
+                        }
+                        textarea {
+                            width: 95%;
+                            max-width: 500px;
+                            height: 100px;
+                            font-size: 1.25em;
+                            border: solid 1px grey;
+                            border-radius: 5px;
+                            padding: 5px 10px;
+                            resize: none;
+                        }
+                        button {
+                            flex: 1;
+                            font-size: 1.25em;
+                            border: solid 1px black;
+                            border-radius: 5px;
+                            padding: 5px 10px;
+                            /* background-color: rgba(0, 0, 0, 0.5); */
+                            background-color: transparent;
+                            /* color: white; */
+                            transition: background-color 500ms;
+                        }
+                        button:hover {
+                            background-color: rgba(255, 255, 255, 0.5);
+                        } 
                     }
                 }
             }
         }
         footer {
-            display: flex;
             color: white;
             background-image: url(../img/hero.png);
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
-            padding: 10px;
-            div {
-                a {
-                    color: white;
-                    text-decoration: none;
-                    font-weight: bold;
+            span {
+                background-color: rgba(0, 0, 0, 0.5);
+                padding: 10px;
+                display: flex;
+                div {
+                    a {
+                        color: white;
+                        text-decoration: none;
+                        font-weight: bold;
+                    }
                 }
             }
         }
@@ -172,7 +207,7 @@
                     a {
                         li {
                             border: none;
-                            border-bottom: solid 1px black;
+                            border-bottom: solid 1px transparent;
                             border-radius: 0;
                             width: 100px;
                             transition: border-bottom 500ms;
@@ -236,19 +271,6 @@
                     align-items: center;
                     font-size: 2em;
                     width: 400px;
-                    a {
-                        li {
-                            border: none;
-                            border-bottom: solid 1px transparent;
-                            border-radius: 0;
-                            width: 100px;
-                            transition: border-bottom 500ms;
-                        }:hover {
-                            /* background-color: rgba(255, 255, 255, 0.5); */
-                            border-bottom: solid 1px white;
-                            /* background: linear-gradient(0deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 50%); */
-                        }
-                    }
                 }
             }
         }
@@ -271,6 +293,11 @@
             }
         }
     }
+}
+
+.parchment {
+    font-family: parchment;
+    font-size: 1.5em;
 }
 
 @font-face {
